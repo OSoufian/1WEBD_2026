@@ -1,0 +1,50 @@
+/* ===== VARIABLES PAR DÉFAUT (MODE CLAIR) ===== */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --header-bg: #f2f2f2;
+    --button-bg: #dddddd;
+}
+
+/* ===== THÈME SOMBRE ===== */
+body.dark-theme {
+    --bg-color: #181818;
+    --text-color: #f5f5f5;
+    --header-bg: #242424;
+    --button-bg: #333333;
+}
+
+/* ===== STYLE GLOBAL ===== */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background-color: var(--header-bg);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: var(--button-bg);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+section {
+    padding: 20px;
+}
