@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie d'images</title>
+    <link rel="stylesheet" href="galery.css">
+</head>
+<body>
+
+    <header>
+        <h1>Galerie d'images</h1>
+        <a href="index.html">← Retour au portfolio</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Galerie infinie et réordonnable</h2>
+            <p>Faites défiler pour charger plus d’images, et réorganisez-les en les glissant-déposant.</p>
+        </section>
+
+        <section id="gallery" class="gallery">
+        </section>
+
+        <div id="loader" class="loader hidden">
+            Chargement en cours...
+        </div>
+    </main>
+
+    <script src="gallery.js" defer></script>
+</body>
+</html>
