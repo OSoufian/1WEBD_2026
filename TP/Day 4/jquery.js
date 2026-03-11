@@ -129,3 +129,27 @@ document.getElementById("sortDate").addEventListener("change", function () {
 
 renderProjects();
 
+// 3 - Axios
+
+document.getElementById("loadComments").addEventListener("click", function () {
+    axios.get("https://jsonplaceholder.typicode.com/comments")    
+    .then(function (response) {
+        const comments = response.data.slice(0, 10);
+
+        const container = document.getElementById("commentsContainer");
+        container.innerHTML = "";
+
+        comments.forEach(function(comment){
+            container.innerHTML += `
+                <div class="comment">
+                    <h4>${comment.name}</h4>
+                    <p><strong>${comment.email}</strong></p>
+                    <p>${comment.body}</p>
+                </div>
+            `;
+        });
+    })
+    .catch(function (error) {
+        console.error("Erreur lors du chargement :", error);
+    });
+});

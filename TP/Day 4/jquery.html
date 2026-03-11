@@ -24,14 +24,6 @@
     </section>
 
     <section id="projets">
-        <h1>Mes projets</h1>
-    </section>
-
-    <section id="livredor">
-        <h1>Livre d'or</h1>
-    </section>
-
-    <section id="projets">
         <h2>Mes projets Supinfo</h2>
 
         <div class="controls">
@@ -64,11 +56,21 @@
         </table>
 
         <div id="pagination"></div>
+    </section>  
+              
+    <section id="livredor">
+            <h2>Livre d'or</h1>
+        <button id="loadComments">
+            Charger les commentaires
+        </button>
+
+        <div id="commentsContainer"></div>
+
     </section>
 
-    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>  
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="jquery.js"></script>
 </body>
 </html>
