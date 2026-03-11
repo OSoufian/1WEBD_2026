@@ -31,8 +31,44 @@
         <h1>Livre d'or</h1>
     </section>
 
+    <section id="projets">
+        <h2>Mes projets Supinfo</h2>
+
+        <div class="controls">
+            <input type="text" id="searchProject" placeholder="Rechercher un projet...">
+
+            <select id="filterCategory">
+                <option value="">Toutes les catégories</option>
+                <option value="Web">Web</option>
+                <option value="Mobile">Mobile</option>
+                <option value="BDD">BDD</option>
+                <option value="Réseau">Réseau</option>
+                <option value="IA">IA</option>
+            </select>
+
+            <select id="sortDate">
+                <option value="recent">Plus récent</option>
+                <option value="old">Plus ancien</option>
+            </select>
+        </div>
+
+        <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Catégorie</th>
+                    <th>Date de fin</th>
+                </tr>
+            </thead>
+            <tbody id="projectsTableBody"></tbody>
+        </table>
+
+        <div id="pagination"></div>
+    </section>
+
     
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>   
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     <script src="jquery.js"></script>
 </body>
 </html>

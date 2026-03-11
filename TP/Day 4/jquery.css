@@ -31,3 +31,34 @@ section {
   min-height: 100vh;
   padding: 40px;
 }
+
+/* Lodash */
+
+#projets {
+    padding: 40px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#pagination {
+    margin-top: 20px;
+}
+
+#pagination button {
+    margin-right: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+}
